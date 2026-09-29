@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #07090E;
+    --card-bg: #0D111A;
+    --border-color: #1E293B;
+    --cyan-glow: #00F0FF;
+    --blue-glow: #0066FF;
+  }
+
+  body {
+    background-color: #07090E;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    direction: rtl; /* چیدمان راست‌چین فارسی */
+  }
+}
