@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Portfolio from "../components/Portfolio";
 import Pricing from "../components/Pricing";
+import Footer from "../components/Footer";
+import OrderForm from "../components/OrderForm";
+
+
 
 export default function Home() {
   return (
@@ -128,7 +132,8 @@ export default function Home() {
 
       {/* ----------------- ۴. بخش نمونه‌کارها (Portfolio) ----------------- */}
       <Portfolio />
-      <Pricing /> 
+      <Pricing />
+      <OrderForm /> 
       {/* ----------------- ۵. فوتر (Footer) ----------------- */}
       <footer id="contact" className="border-t border-slate-800 bg-[#05070a] py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -153,8 +158,8 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </footer>
-
+      </footer>     
+     <Footer />
     </main>
   );
 }
