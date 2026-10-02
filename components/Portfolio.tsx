@@ -22,18 +22,19 @@ const projects: Project[] = [
     tags: ["Next.js 15", "Tailwind CSS", "سئو پیشرفته", "ریسپانسیو"],
     gradient: "from-purple-600/30 via-blue-600/20 to-slate-900",
     // لینکی که وقتی با هوش مصنوعی یا کد ساختی اینجا قرار میدی
-    liveUrl: "https://torettoweb-1.onrender.com", 
+    liveUrl: "https://torettoweb-1.onrender.com/demos/lumina", 
   },
-  {
+   {
     id: 2,
-    title: "لندینگ‌پیج استودیو طراحی (Torreto Web)",
-    category: "لندینگ‌پیج خدماتی & نرم‌افزار",
+    title: "پلتفرم پرداخت و صرافی (NovaPay)",
+    category: "فین‌تک و خدمات مالی",
     description:
-      "سایت اختصاصی با انیمیشن‌های نرم، فرم ثبت سفارش آنی متصل به ربات تلگرام و سئوی بهینه‌شده برای موتورهای جستجو.",
-    tags: ["React 19", "Next.js 15", "اتصال به تلگرام", "UI/UX مدرن"],
-    gradient: "from-cyan-600/30 via-blue-600/20 to-slate-900",
-    liveUrl: "https://torettoweb-1.onrender.com",
+      "طراحی مدرن داشبورد مالی، نمودار لحظه‌ای رمزارزها، نرخ تبادل آنی و سیستم امن تراکنش با بالاترین استاندارد UI/UX.",
+    tags: ["Next.js 15", "TypeScript", "Tailwind CSS", "نمودار لحظه‌ای"],
+    gradient: "from-emerald-600/30 via-teal-600/20 to-slate-900",
+    liveUrl: "https://torettoweb-1.onrender.com/demos/novapay",
   },
+
   {
     id: 3,
     title: "سایت شرکتی و معرفی خدمات (Arka Tech)",
@@ -42,7 +43,7 @@ const projects: Project[] = [
       "صفحه اختصاصی معرفی خدمات مهندسی با طراحی دارک‌مود اختصاصی، پرفورمنس ۱۰۰ در لایت‌هاوس و فرم استعلام آنلاین.",
     tags: ["Next.js", "TypeScript", "داشبورد اختصاصی", "بهینه‌سازی سرعت"],
     gradient: "from-blue-600/30 via-indigo-600/20 to-slate-900",
-    liveUrl: "https://torettoweb-1.onrender.com",
+    liveUrl: "https://torettoweb-1.onrender.com/demos/arka-tech",
   },
 ];
 
