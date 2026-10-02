@@ -3,6 +3,8 @@ import Portfolio from "../components/Portfolio";
 import Pricing from "../components/Pricing";
 import Footer from "../components/Footer";
 import OrderForm from "../components/OrderForm";
+ import FAQ from "../components/FAQ";
+
 
 
 
@@ -133,6 +135,7 @@ export default function Home() {
       {/* ----------------- ۴. بخش نمونه‌کارها (Portfolio) ----------------- */}
       <Portfolio />
       <Pricing />
+      <FAQ />
       <OrderForm /> 
       {/* ----------------- ۵. فوتر (Footer) ----------------- */}
       <footer id="contact" className="border-t border-slate-800 bg-[#05070a] py-12">
