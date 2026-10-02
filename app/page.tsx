@@ -3,7 +3,8 @@ import Portfolio from "../components/Portfolio";
 import Pricing from "../components/Pricing";
 import Footer from "../components/Footer";
 import OrderForm from "../components/OrderForm";
- import FAQ from "../components/FAQ";
+import FAQ from "../components/FAQ";
+import Steps from "../components/Steps";
 
 
 
@@ -134,6 +135,7 @@ export default function Home() {
 
       {/* ----------------- ۴. بخش نمونه‌کارها (Portfolio) ----------------- */}
       <Portfolio />
+      <Steps />
       <Pricing />
       <FAQ />
       <OrderForm /> 
