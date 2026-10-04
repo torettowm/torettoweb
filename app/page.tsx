@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import OrderForm from "../components/OrderForm";
 import FAQ from "../components/FAQ";
 import Steps from "../components/Steps";
+import Trust from "../components/Trust";
 
 
 
@@ -135,6 +136,7 @@ export default function Home() {
 
       {/* ----------------- ۴. بخش نمونه‌کارها (Portfolio) ----------------- */}
       <Portfolio />
+      <Trust />
       <Steps />
       <Pricing />
       <FAQ />

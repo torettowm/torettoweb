@@ -37,7 +37,9 @@ export default function DemoSite({ slug }: DemoSiteProps) {
               ← بازگشت به Torreto Web
             </Link>
             <a
-              href="/#order"
+              href="https://t.me/TorretoWebBot?start=order_lumina"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs bg-rose-600 hover:bg-rose-500 text-white font-medium px-4 py-1.5 rounded-lg shadow-lg shadow-rose-600/30 transition"
             >
               سفارش این قالب
@@ -62,9 +64,12 @@ export default function DemoSite({ slug }: DemoSiteProps) {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4 items-center">
-              <button className="bg-rose-600 hover:bg-rose-500 px-6 py-3 rounded-xl font-bold text-sm shadow-xl shadow-rose-600/30 transition">
+              <a
+                href="#products"
+                className="bg-rose-600 hover:bg-rose-500 px-6 py-3 rounded-xl font-bold text-sm shadow-xl shadow-rose-600/30 transition"
+              >
                 مشاهده همه محصولات
-              </button>
+              </a>
               <div className="flex items-center gap-2 text-slate-400 text-sm">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
                 ارسال رایگان به سراسر کشور
@@ -115,7 +120,7 @@ export default function DemoSite({ slug }: DemoSiteProps) {
         </section>
 
         {/* محصولات پرفروش */}
-        <section className="px-6 py-12 max-w-6xl mx-auto border-t border-white/5">
+        <section id="products" className="px-6 py-12 max-w-6xl mx-auto border-t border-white/5">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-2xl font-bold">پرفروش‌ترین‌های هفته</h2>
             <span className="text-xs text-rose-400">مشاهده همه (۱۲ محصول)</span>
@@ -143,6 +148,39 @@ export default function DemoSite({ slug }: DemoSiteProps) {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* بنر تبدیل بازدیدکننده به مشتری (CTA) */}
+        <section className="px-6 py-16 max-w-4xl mx-auto">
+          <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-rose-950/40 via-slate-900 to-black border border-rose-500/30 text-center shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
+            <span className="inline-block px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-300 text-xs font-semibold mb-4">
+              نسخه پیش‌نمایش تورتو وب (Demo)
+            </span>
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3">
+              می‌خواهید برای برند شما چنین فروشگاهی طراحی شود؟
+            </h3>
+            <p className="text-slate-300 text-sm md:text-base mb-6 max-w-xl mx-auto leading-relaxed">
+              این تنها یک دموی اولیه است. سایت نهایی برند شما با اتصال به درگاه پرداخت مستقیم، پنل آسانِ مدیریت موجودی و سایزبندی و سرعت لود زیر ۱ ثانیه پیاده‌سازی خواهد شد.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="https://t.me/TorretoWebBot?start=order_lumina"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold transition shadow-lg shadow-rose-600/30 flex items-center gap-2"
+              >
+                <span>دریافت مشاوره و سفارش برای بوتیک شما</span>
+                <span>←</span>
+              </a>
+              <Link
+                href="/#portfolio"
+                className="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium transition"
+              >
+                سایر نمونه‌ها
+              </Link>
+            </div>
           </div>
         </section>
       </div>
@@ -173,7 +211,9 @@ export default function DemoSite({ slug }: DemoSiteProps) {
               ← بازگشت به Torreto Web
             </Link>
             <a
-              href="/#order"
+              href="https://t.me/TorretoWebBot?start=order_novapay"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-1.5 rounded-lg shadow-lg shadow-cyan-500/30 transition"
             >
               سفارش پلتفرم مشابه
@@ -225,6 +265,35 @@ export default function DemoSite({ slug }: DemoSiteProps) {
             </div>
           </div>
         </section>
+
+        {/* بنر CTA نواپی */}
+        <section className="px-6 py-16 max-w-4xl mx-auto">
+          <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-cyan-950/40 via-slate-900 to-black border border-cyan-500/30 text-center shadow-2xl relative overflow-hidden">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3">
+              نیاز به سامانه صرافی یا پلتفرم مالی اختصاصی دارید؟
+            </h3>
+            <p className="text-slate-300 text-sm md:text-base mb-6 max-w-xl mx-auto leading-relaxed">
+              تیم ما پلتفرم‌های تحت وب پرسرعت با معماری Next.js و امنیت بالا را متناسب با الزامات صرافی و کسب‌وکار فین‌تک شما طراحی و اجرا می‌کند.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <a
+                href="https://t.me/TorretoWebBot?start=order_novapay"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition shadow-lg shadow-cyan-500/30 flex items-center gap-2"
+              >
+                <span>مشاوره و استعلام پروژه فین‌تک</span>
+                <span>←</span>
+              </a>
+              <Link
+                href="/#portfolio"
+                className="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium transition"
+              >
+                سایر نمونه‌ها
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
@@ -252,7 +321,9 @@ export default function DemoSite({ slug }: DemoSiteProps) {
             ← بازگشت به Torreto Web
           </Link>
           <a
-            href="/#order"
+            href="https://t.me/TorretoWebBot?start=order_arkatech"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xs bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-4 py-1.5 rounded-lg shadow-lg shadow-indigo-600/30 transition"
           >
             سفارش سایت شرکتی
@@ -285,6 +356,35 @@ export default function DemoSite({ slug }: DemoSiteProps) {
               <p className="text-xs text-slate-400 mt-2 leading-relaxed">{item.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* بنر CTA آرکا تک */}
+      <section className="px-6 py-16 max-w-4xl mx-auto">
+        <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-br from-indigo-950/40 via-slate-900 to-black border border-indigo-500/30 text-center shadow-2xl relative overflow-hidden">
+          <h3 className="text-2xl md:text-3xl font-extrabold text-white mb-3">
+            به دنبال یک وب‌سایت شرکتی مدرن و متناسب با اعتبار برندتان هستید؟
+          </h3>
+          <p className="text-slate-300 text-sm md:text-base mb-6 max-w-xl mx-auto leading-relaxed">
+            معرفی حرفه‌ای خدمات، سئو تکنیکال و تجربه کاربری روان را به تورتو وب بسپارید.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://t.me/TorretoWebBot?start=order_arkatech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition shadow-lg shadow-indigo-600/30 flex items-center gap-2"
+            >
+              <span>مشاوره رایگان پروژه شرکتی</span>
+              <span>←</span>
+            </a>
+            <Link
+              href="/#portfolio"
+              className="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium transition"
+            >
+              سایر نمونه‌ها
+            </Link>
+          </div>
         </div>
       </section>
     </div>

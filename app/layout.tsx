@@ -11,22 +11,56 @@ const vazir = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "تورتو وب | استودیو طراحی و توسعه لندینگ‌پیج‌های مدرن",
-  description: "طراحی و توسعه اختصاصی لندینگ‌پیج و وب‌سایت‌های مدرن و فوق سریع با Next.js 15 و React. افزایش فروش و جذب مشتری برای کسب‌وکار شما.",
-  keywords: ["طراحی سایت", "توسعه وب", "لندینگ پیج", "Next.js", "تورتو وب", "طراحی اختصاصی"],
-  authors: [{ name: "Torreto Web Studio" }],
+  metadataBase: new URL("https://torettoweb-1.onrender.com"),
+  title: "استودیو طراحی و توسعه تورتو وب | وب‌سایت‌های فوق‌سریع نسل جدید",
+  description:
+    "طراحی اختصاصی لندینگ‌پیج و وب‌سایت‌های فروشگاهی فوق‌سریع با Next.js 15. سرعت زیر ۱ ثانیه، طراحی مدرن و افزایش نرخ فروش برای برندها و آنلاین‌شاپ‌ها.",
+  keywords: [
+    "طراحی سایت",
+    "توسعه وب Nextjs",
+    "سایت فروشگاهی آنلاین شاپ",
+    "لندینگ پیج اختصاصی",
+    "تورتو وب",
+  ],
+  authors: [{ name: "Torreto Web" }],
   openGraph: {
-    title: "تورتو وب | استودیو طراحی و توسعه وب",
-    description: "طراحی اختصاصی لندینگ‌پیج‌های پرسرعت و مدرن برای ارتقای کسب‌وکار شما",
-    type: "website",
+    title: "استودیو تورتو وب | طراحی وب‌سایت‌های نسل جدید و پرسرعت",
+    description:
+      "فروشگاه اختصاصی و لندینگ‌پیج با تضمین سرعت لود زیر ۱ ثانیه و پشتیبانی کامل. دموهای آنلاین ما را مشاهده کنید.",
+    url: "https://torettoweb-1.onrender.com",
+    siteName: "Torreto Web Studio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "لوگوی استودیو تورتو وب",
+      },
+    ],
     locale: "fa_IR",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "تورتو وب | استودیو طراحی وب",
-    description: "طراحی و توسعه وب‌سایت‌های نسل جدید با بالاترین سرعت و کیفیت",
+    title: "استودیو طراحی و توسعه تورتو وب",
+    description: "طراحی وب‌سایت‌های مدرن، پرسرعت و بهینه‌شده برای فروش بیشتر",
+    images: ["/og-image.png"],
   },
 };
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="fa" dir="rtl">
+      <body className="bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white">
+        {children}
+      </body>
+    </html>
+  );
+}
 
 export default function RootLayout({
   children,
